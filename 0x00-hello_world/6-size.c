@@ -5,7 +5,7 @@
  * Description: Using sizeof to print the type size
  *
  * Return value of main: Always 0 (success)
-*/
+ */
 int main(void)
 {
 	printf("Size of a char: %u byte(s)\n", sizeof(char));
