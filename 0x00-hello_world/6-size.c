@@ -2,11 +2,11 @@
 /**
  * main - Entry point
  *
- * Description : using sizeof to print the type size
+ * Description: Using sizeof to print the type size
  *
- * Return value of main : Always 0 (success)
+ * Return value of main: Always 0 (success)
 */
-int main(void);
+int main(void)
 {
 	printf("Size of a char: %u bytes(s)\n", sizeof(char));
 	printf("Size of an int: %u bytes(s)\n", sizeof(int));
