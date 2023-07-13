@@ -1,10 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - entry point
  *
- * Description: Using sizeof to print the type size
- *
- * Return value of main: Always 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
