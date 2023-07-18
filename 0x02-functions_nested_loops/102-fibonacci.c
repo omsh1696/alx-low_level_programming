@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - entry point
  *
@@ -8,17 +8,20 @@
  */
 int main(void)
 {
-	int num1 = 1;
-	int num2 = 2;
-	int fibo;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	printf("%d\n%d\n", num1, num2);
-	for (int i = 3; i <= 50; i++)
+	for (count = 0; count < 50; count++)
 	{
-		fibo = num1 + num2;
-		printf("%d, ", fibo);
-		num1 = num2;
-		num2 = fibo;
+		sum = fib1 + fib2;
+		printf("%lu", sum);
+		fib1 = fib2;
+		fib2 = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
 	return (0);
 }
