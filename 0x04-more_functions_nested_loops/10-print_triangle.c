@@ -21,9 +21,9 @@ void print_triangle(int size)
 				if ((x + y) <= size)
 					_putchar(' ');
 				else
-					_putchar(35);
+					_putchar('#');
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
