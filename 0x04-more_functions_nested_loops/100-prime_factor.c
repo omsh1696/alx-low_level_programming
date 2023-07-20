@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * LPF - find and print the largest prime factor of the number given
+ * long_prime_factor - find and print the largest prime factor
  *
  * @num: given input
  *
  * Return: 0 always
  */
-long int LPF(long int num)
+long int long_prime_factor(long int num)
 {
 	long largest = 0;
 	long int i;
@@ -33,7 +33,7 @@ long int LPF(long int num)
 int main(void)
 {
 	long int number = 612852475143;
-	long int result = LPF(number);
+	long int result = long_prime_factor(number);
 
 	printf("%ld\n", result);
 	return (0);
