@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * long_prime_factor - find and print the largest prime factor
  *
