@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - adds postive number
  * @argc: int
@@ -8,16 +9,26 @@
  */
 int main(int argc, char **argv)
 {
-	int sum = 0;
-	char *c;
+	int i, j, sum = 0;
 
-	while (--argc)
+	if (argc == 1)
+		printf("%d\n", 0);
+	else
 	{
-		for (c = argv[argc]; *c; c++)
-			if (*c < '0' || *c > '9')
-				return (printf("Error\n", 1));
-		sum += atoi(argv[argc];
+		for (i = 1; i < argc; i++)
+		{
+			for (j = 0; argv[i][j] != '\0'; j++)
+			{
+				if (!(isdigit(argv[i][j])))
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			sum = sum + atoi(argv[i]);
+		}
+		printf("%d\n", sum);
 	}
-	printf("%d\n", sum);
 	return (0);
+
 }
