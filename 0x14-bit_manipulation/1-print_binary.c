@@ -6,22 +6,18 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, count = 0;
-	unsigned long int current;
+	int b = sizeof(n) * 8, print = 0;
 
-	for (i = 63; i >= 0; i--)
+	while (b)
 	{
-		current = n >> i;
-
-		if (current & 1)
+		if (n & 1L << --b)
 		{
 			_putchar('1');
-			count++;
+			print++;
 		}
-		else if (count)
+		else if (print)
 			_putchar('0');
 	}
-	if (!count)
+	if (!print)
 		_putchar('0');
-	}
 }
