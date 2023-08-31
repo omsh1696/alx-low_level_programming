@@ -6,7 +6,6 @@
  */
 void print_binary(unsigned long int n)
 {
-	{
 	int i, count = 0;
 	unsigned long int current;
 
@@ -24,4 +23,5 @@ void print_binary(unsigned long int n)
 	}
 	if (!count)
 		_putchar('0');
+	}
 }
